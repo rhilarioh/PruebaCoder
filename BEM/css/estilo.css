@@ -1,0 +1,38 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    display: inline-block;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: greenyellow;
+    color: red;
+}
+
+/* ESTILOS PARA PSEUDOCLASES */
+a:hover{
+    background-color: blue;
+    font-weight: bold;
+}
+a:active{
+    background-color: yellow;
+    color: blue;
+}
+a:visited{
+    color: black;
+}
+
+/* EJEMPLO DEL :NOT */
+.otro{
+    color: blue;
+}
+.padre:not(.otro){
+    color: red;
+}
+
+.padre2 div:nth-child(4){
+    font-weight: bold;
+    background-color: orange;
+}
